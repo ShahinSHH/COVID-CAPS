@@ -37,8 +37,8 @@ non-COVID viral together form the negative class.
 * Python 3.6
 
 ## Code
-The main code for Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
-The codes are available as the following list:
-* binary.py : The main code
+The code for the Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
+Codes are available as the following list:
+* binary.py : Main code
 * test_binary.py : Test and Evaluation
-* weights-improvement-binary-86.h5 : Best model weights
+* weights-improvement-binary-86.h5 : Best model's weights
