@@ -35,3 +35,10 @@ non-COVID viral together form the negative class.
 ## Requirements
 * Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
 * Python 3.6
+
+## Code
+The main code for Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
+The codes are available as the following list:
+* binary.py : The main code
+* test_binary.py : Test and Evaluation
+* weights-improvement-binary-86.h5 : Best model weights
