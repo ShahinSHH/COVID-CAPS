@@ -31,3 +31,7 @@ As the main goal of this study is to identify
 positive COVID-19 cases, we binarized the labels as either positive
 or negative. In other words the three labels of normal, bacterial, and
 non-COVID viral together form the negative class.
+
+## Requirements
+* Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
+* Python 3.6
