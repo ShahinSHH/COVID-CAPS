@@ -21,7 +21,7 @@ So far, our results has shown that COVID-CAPS has competitive advantageous over
 previous CNN-based models, on a public dataset of chest X-ray images.
 
 ## Dataset
-we used the same dataset as the one used <a href="https://github.com/lindawangg/COVID-Net">here.</a>
+We used the same dataset as the one used <a href="https://github.com/lindawangg/COVID-Net">here.</a>
 This dataset is generated from the following two publicly available chest
 X-ray datasets.
 * <a href="https://github.com/ieee8023/covid-chestxray-dataset">covid-chestxray-dataset</a> : A new data collection project to make COVID-19 data publicly available to the scientific community.
