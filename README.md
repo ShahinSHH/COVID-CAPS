@@ -1,7 +1,7 @@
 # COVID-CAPS
 <h4> A Capsule Network-based framework for identification of  COVID-19 cases from chest X-ray Images </h4>
 
-Novel coronavirus disease 2019 pneumonia (COVID-19), with its relatively high intensive care unit (ICU) admission and mortality
+Novel Coronavirus disease 2019 pneumonia (COVID-19), with its relatively high intensive care unit (ICU) admission and mortality
 rate, is rapidly spreading all over the world. Early diagnosis of this
 disease is of paramount importance as it enables physicians to isolate
 the patents and prevent the further transitions. The current gold standard
