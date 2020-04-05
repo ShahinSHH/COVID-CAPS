@@ -23,6 +23,7 @@ previous CNN-based models, on a public dataset of chest X-ray images.
 <h3>Note : Please don’t use COVID-CAPS as the self-diagnostic model without performing a clinical study.</h3>
   COVID-CAPS is currently a research model aiming to accelerate building a comprehensive and safe diagnostic system to identify COVID-19 cases. This model is not a replacement for clinical diagnostic tests and should not be used as a self-diagnosis tool to look for COVID-19 features without a clinical study at this stage. Our team is working on enhancing the performance and generalizing the model upon receiving more data from medical collaborators and scientific community. You can track new results and versions as they will be updated on this page.
 
+<img src="https://github.com/ShahinSHH/COVID-CAPS/tree/master/CapsNet/model.png"></img>
 
 ## Dataset
 We used the same dataset as the one used <a href="https://github.com/lindawangg/COVID-Net">here.</a>
