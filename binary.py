@@ -9,16 +9,13 @@ from tensorflow.keras import backend as K
 from tensorflow.keras.layers import Layer
 from tensorflow.keras import activations
 from tensorflow.keras import utils
-from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import *
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
-from tensorflow.keras import models
 import keras
 from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras import optimizers
-import tensorflow as tf
 
 K.set_image_data_format('channels_last')
 
@@ -168,9 +165,9 @@ output = Lambda(lambda z: K.sqrt(K.sum(K.square(z), 2)))(capsule)
 
 model = Model(inputs=[input_image], outputs=[output])
 
-adam = optimizers.Adam(lr=0.00001) 
+adam = optimizers.Adam(lr=0.001) 
 
-model.compile(loss=margin_loss, optimizer='Adam', metrics=['accuracy'])
+model.compile(loss=margin_loss, optimizer=adam, metrics=['accuracy'])
 model.summary()
 
 data_augmentation = False
