@@ -39,17 +39,18 @@ or negative. In other words the three labels of normal, bacterial, and
 non-COVID viral together form the negative class.
 
 ## Pre-Training
-Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images.
-To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
+Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images.<br>To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
 We then removed 17797 cases with multiple labels (appeared in more than one category) to reduce the complexity and downscaled all images from (1024,1024) to (224,224).
 
-### Steps to prepare the pre-train dataset
-1. Follow the guideline in the database folder to download and unpack the original dataset
-2. Run xray14_preprocess.py
-This will create another folder in the current directory named database_preprocessed to store downscaled images all in one place. The process may take several minutes.
-3. Run xray14_selection.py
-It will import preprocessed images in the previous step as numpy arrays and stack them together to form two numpy arrays named X_images and Y_labels. These two numpy arrays will then be used to pretrain the dataset.
-Note: It would be impossible to allocate such a large space for a numpy array for some processing systems(based on CPU or GPU capacity and configuration). You may need to split the process into several steps and save the data into seperate numpy arrays and then combine them.
+### Steps to prepare the pre-training dataset
+<ol>
+  <li>Follow the guideline in the database folder to download and unpack the original dataset.</li>
+  <li>Run xray14_preprocess.py<br>
+This will create another folder in the current directory named database_preprocessed to store downscaled images all in one place.</li>
+  <li>Run xray14_selection.py<br>
+It will import preprocessed images generated in the 2nd step as numpy arrays and stack them to form two numpy arrays named X_images and Y_labels. These two numpy arrays will then be used to pretrain our model.<br>
+Note: It would be impossible to allocate such a large space for a numpy array in some processing systems(based on CPU or GPU capacity and configuration). You may need to split the process into several steps and save the data into seperate numpy arrays and then combine them.</li>
+</ol>  
 
 
 ## Requirements
