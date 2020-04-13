@@ -39,8 +39,18 @@ or negative. In other words the three labels of normal, bacterial, and
 non-COVID viral together form the negative class.
 
 ## Pre-Training
-Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images. To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
+Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images.
+To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
 We then removed 17797 cases with multiple labels (appeared in more than one category) to reduce the complexity and downscaled all images from (1024,1024) to (224,224).
+
+### Steps to prepare the pre-train dataset
+1. Follow the guideline in the database folder to download and unpack the original dataset
+2. Run xray14_preprocess.py
+This will create another folder in the current directory named database_preprocessed to store downscaled images all in one place. The process may take several minutes.
+3. Run xray14_selection.py
+It will import preprocessed images in the previous step as numpy arrays and stack them together to form two numpy arrays named X_images and Y_labels. These two numpy arrays will then be used to pretrain the dataset.
+Note: It would be impossible to allocate such a large space for a numpy array for some processing systems(based on CPU or GPU capacity and configuration). You may need to split the process into several steps and save the data into seperate numpy arrays and then combine them.
+
 
 ## Requirements
 * Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
@@ -59,4 +69,10 @@ The code for the Capsule Network implementation is adapted from <a href="https:/
 Codes are available as the following list:
 * binary.py : Main code
 * test_binary.py : Test and Evaluation
-* weights-improvement-binary-86.h5 : Best model's weights
+* weights-improvement-binary-86.h5 : Best model's weights without pre-training
+* weight-improvement-binary-after-44.h5 : COVID-CAPS weights after fine-tuning
+* pre-train.h5 : weights for the pre-trained model
+* pre-train.py : codes for pre-training
+* binary-after.py : codes for fine-tuning
+* xray14_preprocess.py : Extracting and rescaling Chest XRay14 dataset
+* xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
