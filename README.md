@@ -38,9 +38,21 @@ positive COVID-19 cases, we binarized the labels as either positive
 or negative. In other words the three labels of normal, bacterial, and
 non-COVID viral together form the negative class.
 
+## Pre-Training
+Our pre-training dataset consists of 94323 frontal view chest X-ray images for common thorax diseases. This dataset is extracted from the NIH Chest X-ray dataset available online for public access <a href="https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345">here</a>. Chest X-ray14 dataset originally contains 112120 X-ray images for 14 thorax abnormalities. This dataset also contains normal cases without specific findings in their corresponding images. To reduce the number of categories, we classified these 15 groups into 5 categories based on the underlying relations between the abnormalities in each disease. The first four groups are dedicated to No findings, Tumors, Pleural diseases, and Lung infections categories. The fifth group encompasses other images without specific relations with the first four groups.
+We then removed 17797 cases with multiple labels (appeared in more than one category) to reduce the complexity and downscaled all images from (1024,1024) to (224,224).
+
 ## Requirements
 * Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
 * Python 3.6
+* OpenCV
+* Pandas
+* Itertools
+* Glob
+* OS
+* Scikit-image
+* Scikit-learn
+* Matplotlib
 
 ## Code
 The code for the Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
