@@ -67,6 +67,7 @@ Note: It would be impossible to allocate such a large space for a numpy array in
 
 ## Code
 The code for the Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
+Codes to prepare the X-ray14 dataset are adopted from <a href="https://github.com/ManuelPalermo/X-Ray-ConvNet">here</a>.
 Codes are available as the following list:
 
 * pre-train.py : Codes for pre-training
