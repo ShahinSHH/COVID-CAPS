@@ -68,12 +68,14 @@ Note: It would be impossible to allocate such a large space for a numpy array in
 ## Code
 The code for the Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
 Codes are available as the following list:
-* binary.py : Main code
+
+* pre-train.py : Codes for pre-training
+* binary-after.py : Codes for fine-tuning
 * test_binary.py : Test and Evaluation
-* weights-improvement-binary-86.h5 : Best model's weights without pre-training
 * weight-improvement-binary-after-44.h5 : COVID-CAPS weights after fine-tuning
-* pre-train.h5 : weights for the pre-trained model
-* pre-train.py : codes for pre-training
-* binary-after.py : codes for fine-tuning
-* xray14_preprocess.py : Extracting and rescaling Chest XRay14 dataset
+* pre-train.h5 : Weights for the pre-trained model
+* binary.py : Main code without pre-training
+* weights-improvement-binary-86.h5 : Best model's weights without pre-training
+* xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
 * xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
+
