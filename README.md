@@ -49,7 +49,7 @@ We then removed 17797 cases with multiple labels (appeared in more than one cate
 This will create another folder in the current directory named database_preprocessed to store downscaled images all in one place.</li>
   <li>Run xray14_selection.py<br>
 It will import preprocessed images generated in the 2nd step as numpy arrays and stack them to form two numpy arrays named X_images and Y_labels. These two numpy arrays will then be used to pretrain our model.<br>
-Note: It would be impossible to allocate such a large space for a numpy array in some processing systems(based on CPU or GPU capacity and configuration). You may need to split the process into several steps and save the data into seperate numpy arrays and then combine them.</li>
+Note: In some computers, you may face errors regarding memory allocation or limited capacity due to high volume of the data. The simplest solution is to split the process into several steps and save the data in seperate numpy arrays (e.g. each containing 10k images) and then combine them. There are more general ways to address this issue such as customizing a datagenerator, however if your system couldn't run the xray14_selection.py efficiently, the splitting option will be a quick solution.</li>
 </ol>  
 
 
