@@ -8,6 +8,8 @@ import os
 # Set parameters here 
 INPUT_SIZE = (224, 224)
 mapping = {'normal': 0, 'pneumonia': 1, 'COVID-19': 2}
+
+# train/valid/test .txt files
 train_filepath = 'train_split_v3.txt'
 valid_filepath = 'valid_split_v3.txt'
 test_filepath = 'test_split_v3.txt'
