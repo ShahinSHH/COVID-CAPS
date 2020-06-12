@@ -70,6 +70,7 @@ The code for the Capsule Network implementation is adapted from <a href="https:/
 Codes to prepare the X-ray14 dataset are adopted from <a href="https://github.com/ManuelPalermo/X-Ray-ConvNet">here</a>.
 Codes are available as the following list:
 
+* preprocess.py : Converts and saves data into numpy arrays
 * pre-train.py : Codes for pre-training
 * binary-after.py : Codes for fine-tuning
 * test_binary.py : Test and Evaluation
