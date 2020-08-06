@@ -75,7 +75,7 @@ It will import preprocessed images generated in the 2nd step as numpy arrays and
 * Matplotlib
 
 ## Code
-The code for the Capsule Network implementation is adapted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
+The code for the Capsule Network implementation is adopted from <a href="https://keras.io/examples/cifar10_cnn_capsule/">here.</a>
 Codes to prepare the X-ray14 dataset are adopted from <a href="https://github.com/ManuelPalermo/X-Ray-ConvNet">here</a>.
 Codes are available as the following list:
 
