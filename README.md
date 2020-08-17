@@ -100,4 +100,5 @@ pages = {1--5},
 title = {{COVID-CAPS: A Capsule Network-based Framework for Identification of COVID-19 cases from X-ray Images}},
 url = {http://arxiv.org/abs/2004.02696v2},
 year = {2020}
+}
 ```
