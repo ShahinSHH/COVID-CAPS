@@ -89,3 +89,15 @@ Codes are available as the following list:
 * xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
 * xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
 
+## Citation
+If you found this code and the related paper useful in your research, please consider citing:
+```
+@article{Afshar2020a,
+archivePrefix = {arXiv},
+arxivId = {2004.02696v2},
+author = {Afshar, Parnian and Heidarian, Shahin and Naderkhani, Farnoosh and Oikonomou, Anastasia and Plataniotis, Konstantinos N. and Mohammadi, Arash},
+pages = {1--5},
+title = {{COVID-CAPS: A Capsule Network-based Framework for Identification of COVID-19 cases from X-ray Images}},
+url = {http://arxiv.org/abs/2004.02696v2},
+year = {2020}
+```
