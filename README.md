@@ -1,5 +1,6 @@
 # COVID-CAPS
-<h4> A Capsule Network-based framework for identification of  COVID-19 cases from chest X-ray Images </h4>
+<h4> A Capsule Network-based framework for identification of COVID-19 cases from chest X-ray Images </h4>
+The paper can be found at <a href="https://doi.org/10.1016/j.patrec.2020.09.010">https://doi.org/10.1016/j.patrec.2020.09.010</a> .
 
 Novel Coronavirus disease 2019 pneumonia (COVID-19), with its relatively high intensive care unit (ICU) admission and mortality
 rate, is rapidly spreading all over the world. Early diagnosis of this
@@ -19,7 +20,7 @@ only recently identified and large datasets are not available.
 
 So far, our results has shown that COVID-CAPS has competitive advantageous over
 previous CNN-based models, on a public dataset of chest X-ray images. <br> 
-COVID-CAPS structure and methodology is explained in detail at <a href="https://arxiv.org/abs/2004.02696">https://arxiv.org/abs/2004.02696</a> 
+The detailed COVID-CAPS's structure and methodology is explained in detail at <a href="https://doi.org/10.1016/j.patrec.2020.09.010">https://doi.org/10.1016/j.patrec.2020.09.010</a> 
 
 <h3>Note : Please don’t use COVID-CAPS as the self-diagnostic model without performing a clinical study.</h3>
   COVID-CAPS is currently a research model aiming to accelerate building a comprehensive and safe diagnostic system to identify COVID-19 cases. This model is not a replacement for clinical diagnostic tests and should not be used as a self-diagnosis tool to look for COVID-19 features without a clinical study at this stage. Our team is working on enhancing the performance and generalizing the model upon receiving more data from medical collaborators and scientific community. You can track new results and versions as they will be updated on this page.<br>
