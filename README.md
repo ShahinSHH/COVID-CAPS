@@ -1,6 +1,5 @@
 # COVID-CAPS
 <h4> A Capsule Network-based framework for identification of COVID-19 cases from chest X-ray Images </h4>
-The paper can be found at <a href="https://doi.org/10.1016/j.patrec.2020.09.010">https://doi.org/10.1016/j.patrec.2020.09.010</a> .
 
 Novel Coronavirus disease 2019 pneumonia (COVID-19), with its relatively high intensive care unit (ICU) admission and mortality
 rate, is rapidly spreading all over the world. Early diagnosis of this
@@ -94,14 +93,18 @@ Codes are available as the following list:
 
 ## Citation
 If you found this code and the related paper useful in your research, please consider citing:
+
 ```
-@article{Afshar2020a,
-archivePrefix = {arXiv},
-arxivId = {2004.02696v2},
+@article{Afshar2020,
 author = {Afshar, Parnian and Heidarian, Shahin and Naderkhani, Farnoosh and Oikonomou, Anastasia and Plataniotis, Konstantinos N. and Mohammadi, Arash},
-pages = {1--5},
-title = {{COVID-CAPS: A Capsule Network-based Framework for Identification of COVID-19 cases from X-ray Images}},
-url = {http://arxiv.org/abs/2004.02696v2},
+doi = {10.1016/j.patrec.2020.09.010},
+issn = {01678655},
+journal = {Pattern Recognition Letters},
+month = {oct},
+pages = {638--643},
+title = {{COVID-CAPS: A capsule network-based framework for identification of COVID-19 cases from X-ray images}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S0167865520303512},
+volume = {138},
 year = {2020}
 }
 ```
