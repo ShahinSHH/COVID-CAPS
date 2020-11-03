@@ -19,7 +19,7 @@ only recently identified and large datasets are not available.
 
 So far, our results has shown that COVID-CAPS has competitive advantageous over
 previous CNN-based models, on a public dataset of chest X-ray images. <br> 
-The detailed COVID-CAPS's structure and methodology is explained in detail at <a href="https://doi.org/10.1016/j.patrec.2020.09.010">https://doi.org/10.1016/j.patrec.2020.09.010</a> 
+<b>The detailed COVID-CAPS's structure and methodology is explained in detail at</b> <a href="https://doi.org/10.1016/j.patrec.2020.09.010">https://doi.org/10.1016/j.patrec.2020.09.010</a> 
 
 <h3>UPDATE:</h3> Our team has recently released <b>a large CT scan dataset of COVID-19, Community Acquired Pneumonia, and Normal cases</b> called <a href="https://github.com/ShahinSHH/COVID-CT-MD">COVID-CT-MD</a> containing labels and information applicable in Deep Learning and Medical Image Processing.
 You can access this dataset through the <a href="https://figshare.com/s/c20215f3d42c98f09ad0">figshare data repository</a>.
