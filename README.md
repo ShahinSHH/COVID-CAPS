@@ -23,6 +23,7 @@ The detailed COVID-CAPS's structure and methodology is explained in detail at <a
 
 <h3>UPDATE:</h3> Our team has recently released <b>a large CT scan dataset of COVID-19, Community Acquired Pneumonia, and Normal cases</b> called <a href="https://github.com/ShahinSHH/COVID-CT-MD">COVID-CT-MD</a> containing labels and information applicable in Deep Learning and Medical Image Processing.
 You can access this dataset through the <a href="https://figshare.com/s/c20215f3d42c98f09ad0">figshare data repository</a>.
+<h3>UPDATE 2:</h3> The new proposed models working with CT scans are now available at <a href="https://github.com/ShahinSHH/COVID-FACT">https://github.com/ShahinSHH/COVID-FACT</a> and <a href="https://github.com/ShahinSHH/CT-CAPS">https://github.com/ShahinSHH/CT-CAPS</a>.
 
 <h3>Note : Please don’t use COVID-CAPS as the self-diagnostic model without performing a clinical study.</h3>
   COVID-CAPS is currently a research model aiming to accelerate building a comprehensive and safe diagnostic system to identify COVID-19 cases. This model is not a replacement for clinical diagnostic tests and should not be used as a self-diagnosis tool to look for COVID-19 features without a clinical study at this stage. Our team is working on enhancing the performance and generalizing the model upon receiving more data from medical collaborators and scientific community. You can track new results and versions as they will be updated on this page.<br>
