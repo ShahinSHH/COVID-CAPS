@@ -4,7 +4,7 @@
 Novel Coronavirus disease 2019 pneumonia (COVID-19), with its relatively high intensive care unit (ICU) admission and mortality
 rate, is rapidly spreading all over the world. Early diagnosis of this
 disease is of paramount importance as it enables physicians to isolate
-the patents and prevent the further transitions. The current gold standard
+the patients and prevent the further transitions. The current gold standard
 in COVID-19 diagnosis requires specific equipment, is timeconsuming,
 and has relatively low sensitivity. Computed tomography
 (CT) scans and X-ray images, on the other hand, reveal specific
